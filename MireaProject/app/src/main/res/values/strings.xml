@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">MireaProject</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_data">Industry Data</string>
+    <string name="menu_webview">Web Browser</string>
+    <string name="menu_background_task">Background Task</string>
+    <string name="title_activity_main">MireaProject</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="data_fragment_title">IT Industry Data</string>
+    <string name="webview_fragment_title">Web Browser</string>
+    <string name="default_url">https://www.mirea.ru/</string>
+    <string name="industry_info"><![CDATA[
+        <h2>Обзор ИТ-индустрии</h2>
+<p>Индустрия информационных технологий является одним из самых быстрорастущих секторов в мире.</p>
+<p><b>Ключевые тенденции:</b></p>
+<ul>
+    <li>Широкое внедрение облачных вычислений</li>
+    <li>Развитие искусственного интеллекта</li>
+    <li>Повышенное внимание к кибербезопасности</li>
+    <li>Технологии для удалённой работы</li>
+</ul>
+<p>Согласно последним исследованиям, мировой рынок ИТ, как ожидается, будет расти со среднегодовым темпом (CAGR) 5,5% в период с 2023 по 2030 год.</p>
+
+
+
+
+
+
+
+
+    ]]></string>
+</resources>

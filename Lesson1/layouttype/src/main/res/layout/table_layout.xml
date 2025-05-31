@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="*"
+    android:padding="16dp">
+
+    <TableRow
+        android:layout_marginBottom="8dp">
+
+        <Button
+            android:id="@+id/button1"
+            android:text="Button 1"
+            android:layout_column="0"/>
+
+        <TextView
+            android:text="Info text"
+            android:gravity="center"
+            android:layout_column="1"/>
+
+        <Button
+            android:id="@+id/button2"
+            android:text="Button 2"
+            android:layout_column="2"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_marginBottom="8dp">
+
+        <Button
+            android:id="@+id/button3"
+            android:text="Button 3"
+            android:layout_column="0"
+            android:layout_span="1"/>
+
+        <CheckBox
+            android:id="@+id/checkbox1"
+            android:layout_column="1"
+            android:layout_span="2"
+            android:text="Checkbox" />
+    </TableRow>
+
+    <TableRow>
+
+        <ImageButton
+            android:id="@+id/imageButton1"
+            android:src="@android:drawable/ic_dialog_email"
+            android:contentDescription="Email icon"
+            android:layout_column="0"/>
+
+        <Button
+            android:id="@+id/button4"
+            android:text="Button 4"
+            android:layout_column="1"/>
+
+        <Button
+            android:id="@+id/button5"
+            android:text="Button 5"
+            android:layout_column="2"/>
+    </TableRow>
+</TableLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="ru.mirea.khasanovart.mireaproject.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_data"
+        android:name="ru.mirea.khasanovart.mireaproject.ui.data.DataFragment"
+        android:label="@string/menu_data"
+        tools:layout="@layout/fragment_data" />
+
+    <fragment
+        android:id="@+id/nav_webview"
+        android:name="ru.mirea.khasanovart.mireaproject.ui.webview.WebViewFragment"
+        android:label="@string/menu_webview"
+        tools:layout="@layout/fragment_webview" />
+    <fragment
+        android:id="@+id/nav_background_task"
+        android:name="ru.mirea.khasanovart.mireaproject.ui.BackgroundTaskFragment"
+        android:label="Background Task"
+        tools:layout="@layout/fragment_background_task" />
+    <fragment
+        android:id="@+id/nav_permission"
+        android:name="ru.mirea.khasanovart.mireaproject.ui.PermissionsFragment"
+        android:label="Разрешения"
+        tools:layout="@layout/fragment_permissions" />
+
+    <fragment
+        android:id="@+id/nav_sensor"
+        android:name="ru.mirea.khasanovart.mireaproject.ui.SensorFragment"
+        android:label="Сенсор"
+        tools:layout="@layout/fragment_sensor" />
+
+    <fragment
+        android:id="@+id/nav_camera"
+        android:name="ru.mirea.khasanovart.mireaproject.ui.CameraFragment"
+        android:label="Камера"
+        tools:layout="@layout/fragment_camera" />
+
+    <fragment
+        android:id="@+id/nav_microphone"
+        android:name="ru.mirea.khasanovart.mireaproject.ui.MicrophoneFragment"
+        android:label="Микрофон"
+        tools:layout="@layout/fragment_microphone" />
+
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="ru.mirea.khasanovart.mireaproject.ui.profile.ProfileFragment"
+        android:label="Профиль"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/nav_file"
+        android:name="ru.mirea.khasanovart.mireaproject.ui.file.FileFragment"
+        android:label="Файлы"
+        tools:layout="@layout/fragment_file" />
+</navigation>

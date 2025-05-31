@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="16dp">
+
+
+    <ImageView
+        android:id="@+id/profile_image"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/profile"
+        android:scaleType="centerCrop"
+        android:background="@drawable/circle_bg"
+        android:layout_marginBottom="16dp"/>
+
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Иванов Иван Иванович"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"/>
+
+
+    <RatingBar
+        android:id="@+id/rating_bar"
+        style="?android:attr/ratingBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:rating="4.5"
+        android:stepSize="0.5"
+        android:layout_marginBottom="8dp"
+        android:isIndicator="true"/>
+
+    <!-- Статус -->
+    <TextView
+        android:id="@+id/tv_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="В сети"
+        android:textColor="#4CAF50"
+        android:layout_marginBottom="24dp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageButton
+            android:id="@+id/btn_up"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/like"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:scaleType="fitCenter"
+            android:layout_margin="8dp"/>
+
+        <ImageButton
+            android:id="@+id/btn_down"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/dislike"
+            android:scaleType="fitCenter"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:layout_margin="8dp"/>
+    </LinearLayout>
+</LinearLayout>
