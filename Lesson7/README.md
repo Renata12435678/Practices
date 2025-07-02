@@ -1,7 +1,7 @@
 # Отчёт по 7 практике
 ## Хасанова Рената БСБО-07-22
 
-**TimeService** 
+###**TimeService** 
 
 Первым был создан модуль "TimeService", в котором было реализовано получение времени и даты из сервера.
 
@@ -10,7 +10,7 @@
  ![image](https://github.com/user-attachments/assets/8b51d9cd-9722-4b2e-a6a1-a1e8290da897)
 
 
-**HttpURLConnection** 
+###**HttpURLConnection** 
 
 Затем был создан модуль "HttpURLConnection", отправляющий серверу запрос. Полученные данные записываются в приложение.
 
@@ -19,7 +19,7 @@
 ![image](https://github.com/user-attachments/assets/413c500b-a36d-427a-a620-044cd76fcf2b)
 
 
-**FirebaseAuth** 
+###**FirebaseAuth** 
 
 Потом был реализован модуль "FirebaseAuth" - с регистрацией и авторизацией через Firebase.
 
@@ -28,7 +28,7 @@
 ![image](https://github.com/user-attachments/assets/945f5f2b-3e9a-4351-92b8-5a6e133cb187)
 
 
-**MireaProject**.
+###**MireaProject**.
 
 В проекте MireaProject было изменено стартовое окно на окно авторизации. Данные проверяются через FirebaseAuth. После авторизации или регистрации открывается главное меню, в котором был добавлен отдельный фрагмент, который показывает актуальную информацию о месте подключения (с указанием города и погоды).
 
