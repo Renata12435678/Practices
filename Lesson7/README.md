@@ -32,7 +32,7 @@
 
 В проекте MireaProject было изменено стартовое окно на окно авторизации. Данные проверяются через FirebaseAuth. После авторизации или регистрации открывается главное меню, в котором был добавлен отдельный фрагмент, который показывает актуальную информацию о месте подключения (с указанием города и погоды).
 
-![image](https://github.com/user-attachments/assets/d1eba0a6-ea22-4d30-8434-a6bcbf7c608a)
+![image](https://github.com/user-attachments/assets/899f90da-cdfe-43b1-ba08-3e805b784e8f)
 
 ![image](https://github.com/user-attachments/assets/77f1dafd-bf30-4d4f-8bdf-ffd116058482)
 
