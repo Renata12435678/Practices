@@ -2,6 +2,7 @@
 ## Хасанова Рената БСБО-07-22
 
 **TimeService** 
+
 Первым был создан модуль "TimeService", в котором было реализовано получение времени и даты из сервера.
 
 ![image](https://github.com/user-attachments/assets/829f9a7b-f509-4c3a-bd14-26f2034eb874)
@@ -10,6 +11,7 @@
 
 
 **HttpURLConnection** 
+
 Затем был создан модуль "HttpURLConnection", отправляющий серверу запрос. Полученные данные записываются в приложение.
 
 ![image](https://github.com/user-attachments/assets/2513a176-bd0f-4da8-9ea2-ac851bdaf9b8)
@@ -18,6 +20,7 @@
 
 
 **FirebaseAuth** 
+
 Потом был реализован модуль "FirebaseAuth" - с регистрацией и авторизацией через Firebase.
 
 ![image](https://github.com/user-attachments/assets/77835b8a-f611-4ee7-a4b2-c2aeab975ca8)
