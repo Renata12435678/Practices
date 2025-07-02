@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Получить информацию" />
+
+    <TextView
+        android:id="@+id/ipTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="IP: "
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/cityTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Город: "
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/regionTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Регион: "
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/countryTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Страна: "
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/locTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Координаты: "
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/weatherTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Погода: "
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/temperatureTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Температура: "
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/windspeedTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Скорость ветра: "
+        android:textSize="16sp" />
+
+</LinearLayout>
