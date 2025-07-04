@@ -1,6 +1,7 @@
 package ru.mirea.khasanovart.mireaproject;
 
 import android.Manifest;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.util.Log;
@@ -22,6 +23,7 @@ import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
 import com.google.android.material.navigation.NavigationView;
+import com.google.firebase.auth.FirebaseAuth;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -35,6 +37,7 @@ public class MainActivity extends AppCompatActivity
     private AppBarConfiguration mAppBarConfiguration;
     private ActionBarDrawerToggle toggle;
     private static final int REQUEST_CODE_PERMISSIONS = 1001;
+
     private final String[] REQUIRED_PERMISSIONS = {
             Manifest.permission.CAMERA,
             Manifest.permission.RECORD_AUDIO,
@@ -49,15 +52,21 @@ public class MainActivity extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        if (FirebaseAuth.getInstance().getCurrentUser() == null) {
+            startActivity(new Intent(this, LoginActivity.class));
+            finish();
+            return;
+        }
+
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
         setupNavigation();
+
         checkAndRequestPermissions();
     }
 
     private void setupNavigation() {
-
         Toolbar toolbar = binding.appBarMain.toolbar;
         setSupportActionBar(toolbar);
 
@@ -70,6 +79,7 @@ public class MainActivity extends AppCompatActivity
                 R.string.navigation_drawer_close);
         drawer.addDrawerListener(toggle);
         toggle.syncState();
+
         navigationView.setNavigationItemSelectedListener(this);
 
         mAppBarConfiguration = new AppBarConfiguration.Builder(
@@ -93,6 +103,7 @@ public class MainActivity extends AppCompatActivity
 
     private void checkAndRequestPermissions() {
         List<String> permissionsToRequest = new ArrayList<>();
+
         for (String permission : REQUIRED_PERMISSIONS) {
             if (ContextCompat.checkSelfPermission(this, permission)
                     != PackageManager.PERMISSION_GRANTED) {
@@ -160,9 +171,14 @@ public class MainActivity extends AppCompatActivity
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         binding.drawerLayout.closeDrawer(GravityCompat.START);
+
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
-        return NavigationUI.onNavDestinationSelected(item, navController)
-                || super.onOptionsItemSelected(item);
+        try {
+            NavigationUI.onNavDestinationSelected(item, navController);
+            return true;
+        } catch (IllegalArgumentException e) {
+            return super.onOptionsItemSelected(item);
+        }
     }
 
     @Override
